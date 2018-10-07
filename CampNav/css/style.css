@@ -1,0 +1,60 @@
+#backbutton {
+    position: fixed;
+    left: 1%;
+    top: 1.5%;
+    /* this positions the button in the top left corner of the page */
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    width: 200px;
+    height: 200px;
+    top: 55%;
+    left: 0%;
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#addRouteButton {
+    position: fixed;
+    right: 1%;
+    top: 1.5%;
+    /* this positions the button in the top right corner of the page */
+}
+
+#mainTitle {
+    position: fixed;
+    justify-content: center;
+    /* centers heading, no matter the size of the webpage */
+}
+
+#html {
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#body1 {
+    height: 70%;
+    margin: 0%;
+    padding: 0%;
+}
+
+#body2 {
+    height: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+#mymap {
+    /* Setting the height of the 'map div' to 100% (This will expand to fit the size on mobile devices) */
+    height: inherit;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+.mdl-data-table__cell--non-numeric {
+    height: auto;
+}

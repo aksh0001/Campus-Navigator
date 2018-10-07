@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Route</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" sizes="196x196" href="images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+    <link rel="stylesheet" href="css/style.css"> </head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row" id="mainTitle">
+                <!-- home button takes you back to the main page -->
+                <div id="backbutton">
+                    <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon" onclick='ToMain()'> <i class="material-icons">home</i> </button>
+                </div> <span class="mdl-layout-title">Route Creater</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div id="addRouteButton">
+                    <!-- saves created path, NOTE: was not implimented -->
+                    <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon" onclick='ToMain()'> <i class="material-icons">save</i> </button>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
+<body id="body1">
+    <div id="mymap">
+        <!-- The map goes in this div DOM node-->
+    </div>
+    <!-- script files -->
+    <script src="js/shared.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/addRoutePage.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAs3Ae93ATjrwlemyzEFEeCr4fUOp6INLQ&callback=initMap"></script>
+</body>
+
+</html>

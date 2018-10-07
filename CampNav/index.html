@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" sizes="196x196" href="images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" /> </head>
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <!-- MDL for index page -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row" id="mainTitle">
+                <!-- Title --><span class="mdl-layout-title">Main Page</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div id="addRouteButton">
+                    <!-- add button that directs you to add route to page -->
+                    <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon" onclick="toAddRoute()"> <i class="material-icons">add</i> </button>
+                </div>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <!-- this will list all the preset routes, created using a dynamic table -->
+                        <h4>Monash Routes</h4>
+                        <!-- this is the lists of the routes -->
+                        <table width="100%" table border="0" cellpadding="0" cellspacing="0" , class="mdl-data-table mdl-js-data-table mdl-data-table--selectable ">
+                            <tbody id="path-infomation"> </tbody>
+                        </table>
+                        <!-- routes created AND saved by the user -->
+                        <h4>User Routes</h4> add routes here... </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--   JavaScript files:   -->
+    <!-- Importing geometry API -->
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3&libraries=geometry&key=AIzaSyAs3Ae93ATjrwlemyzEFEeCr4fUOp6INLQ"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/mainPage.js"></script>
+</body>
+
+</html>

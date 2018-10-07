@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" sizes="196x196" href="images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" /> </head>
+<style type="text/css">
+
+</style>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- home button, returns you to index page-->
+                <div id="backbutton">
+                    <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon" , onclick='returnToMain()'> <i class="material-icons">home</i> </button>
+                </div>
+                <!-- webpage title -->
+                <title>Navigator</title>
+                <div>
+                    <h1 style="text-align: center;">
+                        <span id='navtitle' class="mdl-layout-title">
+                            <!-- main heading of page -->
+                    Navigator</span></h1>
+                    <!-- Add spacer, to align navigation to the right -->
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
+<body id="body1">
+    <div id="overlay"> <img id="dirimgs"> </div>
+    <!-- Your content here -->
+    <div id="mymap">
+        <!-- The map goes in this div DOM node-->
+    </div>
+</body>
+
+<body id='body2'>
+    <!-- MDL formatting -->
+    <div> <span>          
+        <!-- table displays user infomation (as desribed below) -->
+    <table  border="1" width="100%" ID="Table2", class="mdl-data-table mdl-js-data-table ">
+  <tbody>
+    <tr>
+        <!-- provides worded direction to next way point -->
+      <td  class="mdl-data-table__cell--non-numeric">Next action:</td>
+      <td id='nextact'>stop</td>
+     
+    </tr>
+      <tr>
+          <!-- distance to waypoint -->
+          <td  class="mdl-data-table__cell--non-numeric">Distance to next waypoint:</td>
+          <td id='distwp'>infinity</td>
+          
+      </tr>
+    <tr>
+         <!-- distance to  -->
+      <td class="mdl-data-table__cell--non-numeric">Distance to destination:</td>
+      <td id='distdest'>infinity</td>
+        
+    </tr>
+    <tr>
+      <td  class="mdl-data-table__cell--non-numeric">ETA:</td>
+      <td id='eta'>never</td>
+      
+    </tr>
+  </tbody>
+</table>
+            
+        </span> </div>
+    <div id="toast" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <!--   JavaScript files:   -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="js/utility.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/navigatePage.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAs3Ae93ATjrwlemyzEFEeCr4fUOp6INLQ&callback=initMap&libraries=geometry"></script>
+</body>
+<html>
